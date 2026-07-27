@@ -1,0 +1,1 @@
+gh repo create muzakkir86/file-organizer --public --source=. --remote=origin --pushgh repo create muzakkir86/file-organizer --public --source=. --remote=origin --push
