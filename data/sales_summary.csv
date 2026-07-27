@@ -1,0 +1,13 @@
+region,product,total_units,total_revenue
+East,Gadget,111,5761.95
+East,Doohickey,116,5014.639999999999
+East,Widget,97,1946.13
+North,Widget,97,4478.85
+North,Doohickey,98,4223.58
+North,Gadget,100,3280.2
+South,Widget,131,8086.469999999999
+South,Doohickey,141,6610.45
+South,Gadget,130,5187.46
+West,Widget,128,7171.1
+West,Doohickey,114,5931.36
+West,Gadget,132,5251.349999999999

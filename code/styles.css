@@ -1,0 +1,118 @@
+:root {
+  --road-color: #555;
+  --line-color: #fff;
+  --bg-color: #0d4c6d;
+  --player-color: #e74c3c;
+  --enemy-color: #2ecc71;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(circle at top, #2c7fa1, #0b2230);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-wrapper {
+  width: 340px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 1.6rem;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 8px 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+}
+
+.game-area {
+  position: relative;
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+  overflow: hidden;
+  background: linear-gradient(#3f4d5c 0%, #2a333f 100%);
+  border: 6px solid var(--road-color);
+  border-radius: 20px;
+}
+
+.game-area::before,
+.game-area::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, var(--line-color) 25%, transparent 50%);
+  background-size: 100% 60px;
+  transform: translateX(-50%);
+}
+
+.game-area::before {
+  left: 25%;
+}
+
+.game-area::after {
+  left: 75%;
+}
+
+.player-car,
+.enemy-car {
+  position: absolute;
+  width: 40px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.player-car {
+  background: linear-gradient(180deg, #ff6b6b, #c0392b);
+  left: 130px;
+  top: 400px;
+}
+
+.enemy-car {
+  background: linear-gradient(180deg, #2ecc71, #16a085);
+}
+
+.controls {
+  margin-top: 16px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: #1abc9c;
+  color: #0b2230;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #17a589;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
